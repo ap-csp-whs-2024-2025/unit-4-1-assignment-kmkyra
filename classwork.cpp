@@ -23,6 +23,12 @@ int main()
   //double sum = x+y;
   //std::cout << sum << std::endl;
   //std::cout << (sum == 0.3) << std::endl;
+
+  //user input
+  // std::string x;
+  // std::cout << "What is your name?" << std::endl;
+  // std::cin >> x;
+  // std::cout << "Hello" << x << ". It is nice to meet you!" << std::endl;
   
 //problem 1
 int x = 25;
@@ -34,12 +40,17 @@ int quo = x/y;
 int mod = x%y;
 std::cout << sum << " " << diff << " " << prod << " " << quo << " " << mod << std::endl;
 
+int z = 10;
+bool greaterThan = x>z;
+bool lessThan = y<x;
+std::cout << greaterThan << " " << lessThan << std::endl;
+
 //problem 2
 bool isSunny = true;
 bool hasUmbrella = false;
-std::cout << (isSunny && hasUmbrella) << std::endl;
-std::cout << (isSunny || hasUmbrella) << std::endl;
-std::cout << (!isSunny) << std::endl;
+std::cout << (isSunny && hasUmbrella) << " ";
+std::cout << (isSunny || hasUmbrella) << " ";
+std::cout << (!isSunny) << " ";
 std::cout << (!isSunny && !hasUmbrella) <<std::endl;
 
 //problem 3
@@ -50,5 +61,35 @@ bool hasLicense = false;
 bool isGreater = n>m;
 bool isEqual = m == 4.0;
 bool c = (hasLicense && m<=n);
+bool lala = (n>5 && !hasLicense);
+std::cout << isGreater << " " << isEqual << " " << c << " " << lala << std::endl;
+
+//problem 4
+std::string firstName = "John";
+std::string lastName = "Doe";
+double score = 85.75;
+
+std::cout << lastName << ", " << firstName << std::endl;
+std::cout << "Your score is: " << score << std::endl;
+
+//problem 6
+int age = 18;
+int year = 2024;
+double height = 5.9;
+bool isStudent = true;
+std::string city = "New York";
+bool isAdult = age>=18;
+bool overSix = height>6;
+
+
+std::cout << year-age << " " << isAdult << " " << overSix << " " << (isStudent && city == "New York") << std::endl;
+
+//bonus
+int i = 50;
+double d = 100.5;
+bool flag = false;
+
+std::cout << (i%5 == 0 && d>50) << " " << (d<=100 || flag == true) << " " << (!flag && i>30) << std::endl;
+
   return 0;
 }
